@@ -30,7 +30,7 @@ The modular design of the system enables:
 •	 Integrate with other IoT platforms (ThingSpeak, AWS IoT) with only a switch of the MQTT server or dashboard flow. 
 Concisely, the design provides a scalable and user-friendly blueprint of a sustainable and uninterrupted environmental surveillance blending real-time sensing with adaptable and open-source data visualization and correspondence.
 # III.	METHODOLOGY
-A.	System Overview
+## A.	System Overview
 The project was constructed to be an IoT temperature and humidity sensor using an ESP32 -C3 and DHT11 sensor and Adafruit NeoPixel RGB LED. It reads the temperature and humidity of the air and displays the condition using LED colors and transmits it to HiveMQ MQTT cloud. It also subscribes to instructions on a certain topic about MQTT to manage or text data.
 B.	Hardware Components
 •	ESP32-C3 Microcontrolle[3][7[r- the primary communication controller and wireless communicator, which works with Wi-Fi and MQTT. 
