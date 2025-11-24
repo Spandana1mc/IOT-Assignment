@@ -6,18 +6,18 @@ IoT has transformed the physical devices in communication with the digital world
  It is our aim to demonstrate the method of integrating hardware sensing, wireless communication as well as data analysis in a single IoT device. The project emphasizes a point that extremely low-cost hardware and freely available tools can create scaleable, low-energy consumption, and monitoring of schools, houses, and factories. Since MQTT and Node -RED are not complex, it is not difficult to add more sensors, cloud storage, or automatic controls. The prototype has the potential to become a larger IoT system.
 # II.	SYSTEM OVERVIEW 
 The IoT temperature and humidity monitoring system combines both hardware and software to monitor all the data that includes data collection up to real-time display and alerts.
-A.	Hardware Components
+## A.	Hardware Components
 The hardware layer provides parts that do a major task in the monitoring process, which are small and inexpensive and require low power: 
 •	ESP32-C3 Microcontroller: It serves as the primary processor and speech maker. It has an inbuilt Wi-Fi and Bluetooth, has enough power, and operates with popular IoT tools. It periodically scans the sensors and performs minor data tasks on the device and transmits data over the air. 
 •	DHT11 Sensor: It is a simple digital sensor, which measures both humidity and temperature. It is simple to join and learn or fast projects. It transmits sanitized signals of temperature (0 to 50 o C) and humidity (20ps to 90ps) which are interpreted by the ESP32 on a predetermined interval. 
 •	NeoPixel (WS2812) LED: It is an LED that displays the surrounding environment. It can switch color (blue, green, orange, red) such that its users are able to know how things are without having to open a dashboard.
 •	 Power Supply and Circuitry: The supply is built-in to the ESP32 and so powering of the parts is simple and the system is small. The components are installed on the breadboard to quickly build, but can be transferred to a specialized board to be more durable, or to actual implementation.
-B.	Software Tools
+## B.	Software Tools
 The software side integrates firmware, communication protocols, and user-facing interfaces:
 •	Arduino IDE: The primary code editor, library utility, and flashів. It allows amateur and professional designers to prototype fast since most libraries are available. 
 •	MQTT Broker (broker.hivemq.com): A public server, which is cloud based and an MQTT Broker that communicates all the messages of publish/subscribe. MQTT was selected due to little bandwidth that it uses, reliably delivered, and is prevalent in the IoT.
 •	 Node-RED Dashboard[5][9][15]: It is operated by a computer or a server. Node-RED is a MQTT consumer that takes live data, deconstructs JSON messages and displays the information on a web page. Its drag-and-drop functionality allows any person, including non-technical users to create charts, gauges and alerts, to monitor trends, review historical data and receive notification of events.
-C.	System Architecture and Operational Flow
+## C.	System Architecture and Operational Flow
 At its core, the system features a tightly integrated architecture:
 1. The ESP32 receives temperature and humidity measurement of the DHT11 after every 10 seconds.
  2. To provide immediate feedback, the read data is tested locally to select the correct color LED to use with NeoPixel which is an LED. 
