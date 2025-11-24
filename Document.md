@@ -115,6 +115,8 @@ This proves that the device has been able to
 The serial output was constant in the course of hours, with controlable data loss, which means that the network connection was steady, and MQTT was processed efficiently by ESP32. 
 B.	Node-RED Dashboard Visualization.
     After the data were finally published, the Flow in Node-RED was subscribed to the MQTT topic and displayed the received data. The dashboard was made up of two gauges and two charts one of temperature and one of humidity.
+![Project Image](https://raw.githubusercontent.com/Spandana1mc/IOT-Assignment/main/Images/Picture2.png)
+
 
 ![Project Image](https://raw.githubusercontent.com/Spandana1mc/IOT-Assignment/main/Images/Picture1.png)
 
