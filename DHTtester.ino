@@ -1,3 +1,4 @@
+```
 include <WiFi.h>
 include <Adafruit_NeoPixel.h>
 include <DHT.h>
@@ -168,3 +169,4 @@ void loop() {
   delay(5000); // wait 5 seconds
 }
 
+```
