@@ -1,10 +1,10 @@
-#IoT Environmental Monitoring System
+# IoT Environmental Monitoring System
 
 This project is a simple, low-cost IoT system that monitors temperature and humidity using an ESP32-C3 microcontroller and publishes data to the HiveMQ public MQTT broker, with visualization on a Node-RED dashboard
 
 ESP32-C3 + DHT11 + NeoPixel + MQTT + Node-RED
 
-#Features
+# Features
 
 Real-time sensor data (every 10 seconds)
 
@@ -18,7 +18,7 @@ JSON-formatted MQTT messages
 
 Auto reconnection for Wi-Fi & MQTT
 
-#Hardware
+# Hardware
 
 ESP32-C3
 
@@ -28,7 +28,7 @@ WS2812 / NeoPixel LED
 
 Breadboard & jumper wires
 
-#MQTT Setup
+# MQTT Setup
 
 Broker:
 ```
@@ -51,7 +51,7 @@ Example JSON:
 { "d": { "temp": 26.5, "humidity": 62.1 } }
 ```
 
-#LED Temperature Indication
+# LED Temperature Indication
 Temperature	LED Color
 ```
 < 0°C	Blue
@@ -60,7 +60,7 @@ Temperature	LED Color
 25–30°C	Orange
 > 30°C	Red
 ```
-#Node-RED Dashboard
+# Node-RED Dashboard
 
 Includes:
 
