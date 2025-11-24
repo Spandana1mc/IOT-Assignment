@@ -116,6 +116,7 @@ The serial output was constant in the course of hours, with controlable data los
 B.	Node-RED Dashboard Visualization.
     After the data were finally published, the Flow in Node-RED was subscribed to the MQTT topic and displayed the received data. The dashboard was made up of two gauges and two charts one of temperature and one of humidity.
 
+![Project Image](https://raw.githubusercontent.com/Spandana1mc/IOT-Assignment/main/Images/Picture1.png)
 
 1)	Gauge Display
  The gauge indicators were used to show the temperature and humidity in real time. The thermostat was 0 to 50 degrees C. The humidity indicator was between 0 and 100 percentage. All the gauges were dynamically updated after every 10 seconds according to new MQTT messages. The publish subscribe model proved to be reliable as shown by the real time response.[12]
