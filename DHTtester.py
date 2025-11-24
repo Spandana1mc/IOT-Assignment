@@ -1,30 +1,30 @@
-#include <WiFi.h>
-#include <Adafruit_NeoPixel.h>
-#include <DHT.h>
-#include <ArduinoJson.h>
-#include <PubSubClient.h>
+include <WiFi.h>
+include <Adafruit_NeoPixel.h>
+include <DHT.h>
+include <ArduinoJson.h>
+include <PubSubClient.h>
 
 // --------------------------------------------------------------------------------------------
 //        UPDATE THESE SETTINGS
 // --------------------------------------------------------------------------------------------
-#define MQTT_HOST "broker.hivemq.com"  // Example public broker
-#define MQTT_PORT 1883
-#define MQTT_DEVICEID "H00519258"
-#define MQTT_USER ""
-#define MQTT_TOKEN ""
-#define MQTT_TOPIC "H00519258/evt/status/fmt/json"
-#define MQTT_TOPIC_DISPLAY "H00519258/cmd/display/fmt/json"
+define MQTT_HOST "broker.hivemq.com"  // Example public broker
+define MQTT_PORT 1883
+define MQTT_DEVICEID "H00519258"
+define MQTT_USER ""
+define MQTT_TOKEN ""
+define MQTT_TOPIC "H00519258/evt/status/fmt/json"
+define MQTT_TOPIC_DISPLAY "H00519258/cmd/display/fmt/json"
 
-#define RGB_PIN 2   // NeoPixel data pin
-#define DHT_PIN 3 // DHT11 data pin
-#define DHTTYPE DHT11
-#define NEOPIXEL_TYPE NEO_RGB + NEO_KHZ800
+define RGB_PIN 2   // NeoPixel data pin
+define DHT_PIN 3 // DHT11 data pin
+define DHTTYPE DHT11
+define NEOPIXEL_TYPE NEO_RGB + NEO_KHZ800
 
 // Temperature thresholds
-#define ALARM_COLD 0.0
-#define ALARM_HOT 30.0
-#define WARN_COLD 10.0
-#define WARN_HOT 25.0
+define ALARM_COLD 0.0
+define ALARM_HOT 30.0
+define WARN_COLD 10.0
+define WARN_HOT 25.0
 
 // WiFi credentials
 char ssid[] = "Spandana";
@@ -167,3 +167,4 @@ void loop() {
 
   delay(5000); // wait 5 seconds
 }
+
