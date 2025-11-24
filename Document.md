@@ -100,7 +100,7 @@ The entire operational cycle of the system included sensor reading, data process
 A.	 Arduino Serial Output Analysis[3]
 . Once the program was uploaded into ESP32 microcontroller, the serial monitor was launched at a baud rate of 115200 to confirm the data flow and the process of MQTT publishing. The following series of messages was noticed: 
 
-![Project Image](https://raw.githubusercontent.com/Spandana1mc/IOT-Assignment/main/Images/Picture3.png)
+![ProjectImage](https://raw.githubusercontent.com/Spandana1mc/IOT-Assignment/main/Images/Picture3.png)
 
 •	Connecting to Wi Fi... Wi Fi 
 •	Connected. IP Address: 192.168.1.8 
